@@ -16,8 +16,8 @@
 1. **Клонируйте репозиторий:**
 
    ```bash
-   git clone https://github.com/umerenkovmaksi,/calculator.git
-   cd calculator
+   git clone https://github.com/umerenkovmaksim/calc_service.git
+   cd calc_service
    ```
 
 2. **Запустите сервис:**
@@ -25,7 +25,7 @@
    Чтобы запустить сервис, используйте следующую команду:
 
    ```bash
-   go run ./cmd/calc_service/...
+   go run ./cmd/calc_service/main.go
    ```
 
 ## Использование API
