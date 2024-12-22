@@ -53,7 +53,11 @@ func compute(a, b float64, operator string) (float64, error) {
 func checkExpression(expression string) bool {
 	for _, symbol := range expression {
 		_, check := OPERATION_PRIORITIES[symbol]
-		if !unicode.IsDigit(symbol) && !check {
+		if !unicode.IsDigit(symbol) &&
+			!check &&
+			symbol != ' ' &&
+			symbol != '(' &&
+			symbol != ')' {
 			return false
 		}
 	}
